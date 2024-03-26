@@ -71,8 +71,8 @@ function getPossibleKnightLocations(sq) {
     if (sq[0]-2 >= 0 && sq[1]+1 <= 7) {
         arrayOfLocations.push([sq[0]-2,sq[1]+1]);
     }
-    if (sq[0]+2 <= 7 && sq[1]-1 >= 0) {
-        arrayOfLocations.push([sq[0]+2,sq[1]-1]);
+    if (sq[0]-1 >= 0 && sq[1]+2 <= 7) {
+        arrayOfLocations.push([sq[0]-1,sq[1]+2]);
     }
     if (sq[0]+1 <= 7 && sq[1]+2 <= 7) {
         arrayOfLocations.push([sq[0]+1,sq[1]+2]);
@@ -122,7 +122,7 @@ knightMoves([3,5],[6,5]);
 console.log("----------------------------------------------------------------");
 knightMoves([3,3],[3,4]);
 console.log("----------------------------------------------------------------");
-knightMoves([0,0],[3,3]);
+knightMoves([0,0],[7,7]);
 console.log("----------------------------------------------------------------");
 
 
